@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing for Newcomers to this city</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 页面头部 -->
+    <header>
+        <div class="container">
+            <h1>Housing for Newcomers to this city</h1>
+            <p>making it easier and more convenient for newcomers to find housing</p>
+        </div>
+    </header>
+
+    <!-- 搜索框 -->
+    <section class="search">
+        <div class="container">
+            <input type="text" id="location" placeholder="输入城市或区域">
+            <button onclick="searchRental()">Search</button>
+        </div>
+    </section>
+
+    <!-- 显示租房信息 -->
+    <section id="rental-list" class="rental-list">
+        <div class="container">
+            <h2>Housing information</h2>
+            <ul id="rental-info">
+                <!-- 这里是动态加载的租房信息 -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- 页面底部 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Housing for Newcomers to this city</p>
+        </div>
+    </footer>
+    <!-- 右侧纵向图片栏 -->
+    <aside class="right-gallery" aria-label="图片画廊">
+        <img src="../assert/1.jpg" alt="图片 1">
+        <img src="../assert/2.jpg" alt="图片 2">
+        <img src="../assert/3.jpg" alt="图片 3">
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

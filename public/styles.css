@@ -1,0 +1,150 @@
+/* 基本样式设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 为页面内容预留右侧空间，避免被画廊遮挡 */
+body {
+    position: relative;
+    padding-right: 180px; /* 给右侧画廊留空间 */
+}
+
+/* 页面头部 */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* 搜索框样式 */
+.search {
+    background-color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 60%;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #3498db;
+}
+
+/* 租房信息展示样式 */
+.rental-list {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.rental-list h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rental-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rental-list li {
+    background-color: #ecf0f1;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.rental-list li h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.rental-list li p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* 右侧纵向图片画廊 */
+.right-gallery {
+    position: fixed;
+    top: 100px; /* 从页面顶部偏移，使其不过度遮挡 header */
+    right: 20px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    z-index: 50;
+}
+
+.right-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+/* 响应式：窄屏时隐藏右侧画廊并移除右侧留白 */
+@media (max-width: 900px) {
+    .right-gallery {
+        display: none;
+    }
+    body {
+        padding-right: 0;
+    }
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
