@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing for Newcomers to this city</title>
+    <link rel="icon" type="image/png" href="assert/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Page header -->
+    <header>
+        <div class="container">
+            <h1>Housing for Newcomers to this city</h1>
+            <p>making it easier and more convenient for newcomers to find housing</p>
+        </div>
+    </header>
+
+    <!-- About section -->
+    <section class="about">
+        <div class="container">
+            <h2>About this site</h2>
+            <p>
+                This website aggregates rental information collected from multiple rental platforms and listings across different cities. It is designed to help people who come to the area for work, study, or life to quickly and conveniently find suitable housing. The platform provides summarized listings, pictures, rents, and practical details so newcomers can make faster, better-informed decisions.
+            </p>
+            <p>
+                We aim to keep the data easy to scan: each listing shows a short description, size, location, estimated rent, utilities, furnishing, and availability date. If you need more details about a listing, you can view the city pages for images and fuller descriptions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Search box -->
+    <section class="search">
+        <div class="container">
+            <input type="text" id="location" placeholder="Enter city or area">
+            <button onclick="searchRental()">Search</button>
+        </div>
+    </section>
+
+    <!-- Display rental information -->
+    <section id="rental-list" class="rental-list">
+        <div class="container">
+            <nav class="city-links" style="text-align:center;margin-bottom:24px;">
+                <a href="Shanghai.html" class="city-link">Shanghai</a> |
+                <a href="Peking.html" class="city-link">Peking</a> |
+                <a href="Kantong.html" class="city-link">Kantong</a> |
+                <a href="Shenzhen.html" class="city-link">Shenzhen</a>
+            </nav>
+            <h2>Housing information</h2>
+            <ul id="rental-info">
+                <!-- rental listings are loaded here dynamically -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Page footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Housing for Newcomers to this city</p>
+        </div>
+    </footer>
+    <!-- Right-side vertical gallery -->
+    <aside class="right-gallery" aria-label="Image gallery">
+        <img src="assert/1.jpg" alt="Image 1">
+        <img src="assert/2.jpg" alt="Image 2">
+        <img src="assert/3.jpg" alt="Image 3">
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
